@@ -5,15 +5,17 @@
 }
 
 body {
+    width:100vw;
     margin:0px;
     padding:0px; 
     user-select: none;
+    overflow-x: hidden;
 }
 
 #main-Container {
     width:calc(100vw - 50px);
     height:calc(100vh - 50px);
-    position:fixed;
+    position:absolute;
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
@@ -120,4 +122,26 @@ body {
     background:white;
     color:black;
     cursor:pointer;
+}
+
+#footer {
+    width:calc(100vw - 100px);
+    height:200px;
+    background:rgb(15, 15, 15);
+    padding:50px;
+    color:rgb(185, 185, 185);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:100vh;
+}
+
+#footer-Name {
+    color:rgb(185, 185, 185);
+    font-size: 40px;
+}
+
+::-webkit-scrollbar {
+    height:0px;
+    width:0px;
 }
